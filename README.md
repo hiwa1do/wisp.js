@@ -1,24 +1,14 @@
 # wisp.js
 
-This is an implementation of a [Wisp](https://github.com/MercuryWorkshop/wisp-protocol) server, written in a single JavaScript file made for cloudflare web workers.
+This is an implementation of a [Wisp](https://github.com/MercuryWorkshop/wisp-protocol) server, written in a single JavaScript file made for Cloudflare Workers.
 
 ## Installation:
-### Install From Source:
-Clone this repository and cd into it, then run the following commands:
-```
-python3 -m venv .venv
-source .venv/bin/activate
-pip3 install -e .
-```
+Download [/src/worker.js](https://github.com/hiwa1do/wisp.js/blob/main/src/worker.js)
 
-### Install From PyPI:
-Run the following command to install this program:
-```
-pip3 install wisp-python
-```
+Go to Cloudflare Workers & Pages
 
-To install the Cloudflare Warp proxy feature:
-```
-pip3 install wisp-python[warp]
-```
-This allows you proxy all exit traffic through Cloudflare Warp.
+Click "Create Application", "Start with Hello World!", then "Deploy"
+
+Select all of the code in the box and replace it with the code from worker.js
+
+Click deploy and your all done
